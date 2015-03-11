@@ -1,5 +1,11 @@
 # Alfresco_sap
-Pour utiliser cette démo il faut installer Alfresco Comunity 5.0.b
+Pour utiliser cette démo il faut installer Alfresco Comunity 5.0.c
+```
+Pour linux : http://dl.alfresco.com/release/community/5.0.c-build-00145/alfresco-community-5.0.c-installer-linux-x64.bin
+```
+```
+Pour windows : http://dl.alfresco.com/release/community/5.0.c-build-00145/alfresco-community-5.0.c-installer-win-x64.exe
+```
 
 Démarer Alfresco avec ALFRESCO_PATH/alfresco.sh start
 
