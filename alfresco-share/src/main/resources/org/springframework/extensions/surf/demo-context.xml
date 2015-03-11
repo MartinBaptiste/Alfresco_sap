@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN'" "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+	<bean id="${artifactId}.action" class="org.springframework.extensions.config.ConfigBootstrap"
+		init-method="register">
+		<property name="configService" ref="web.config" />
+		<property name="configs">
+			<list>
+				<value>classpath:alfresco/web-extension/demo-config-custom.xml</value>
+			</list>
+		</property>
+	</bean>
+
+	<bean id="${artifactId}.formsConfig" class="org.springframework.extensions.config.ConfigBootstrap"
+		init-method="register">
+		<property name="configService" ref="web.config" />
+		<property name="configs">
+			<list>
+				<value>classpath:alfresco/web-extension/forms/demoForm.xml</value>
+			</list>
+		</property>
+	</bean>
+
+	<bean id="${artifactId}.recources" class="org.alfresco.i18n.ResourceBundleBootstrapComponent">
+		<property name="resourceBundles">
+			<list>
+				<value>alfresco.messages.demo-messages</value>
+				<value>alfresco.messages.demo-messages_fr</value>
+			</list>
+		</property>
+	</bean>
+</beans>

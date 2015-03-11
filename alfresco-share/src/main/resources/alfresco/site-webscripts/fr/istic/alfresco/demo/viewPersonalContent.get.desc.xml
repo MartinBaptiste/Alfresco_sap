@@ -1,0 +1,6 @@
+<webscript>
+	<shortname>Personal content Listing Page</shortname>
+	<description>Page listing of personal content contents</description>
+	<url>/viewPersonalContent</url>
+	<family>demo</family>
+</webscript>

@@ -1,0 +1,49 @@
+<model name="demo:demoModel" xmlns="http://www.alfresco.org/model/dictionary/1.0">
+
+	<description>Alfresco Demo System Definitions</description>
+	<author>Baptiste MARTIN</author>
+	<version>1.0</version>
+
+	<imports>
+		<import uri="http://www.alfresco.org/model/dictionary/1.0" prefix="d" />
+		<import uri="http://www.alfresco.org/model/content/1.0" prefix="cm" />
+	</imports>
+
+	<namespaces>
+		<namespace uri="http://www.istic.org/model/demo/1.0" prefix="demo" />
+	</namespaces>
+
+	<types>
+		<type name="demo:personalContent">
+			<title>Personal content</title>
+			<parent>cm:content</parent>
+			<properties>
+				<property name="demo:subname">
+					<title>Subname</title>
+					<type>d:text</type>
+					<mandatory enforced="true">true</mandatory>
+					<index enabled="true">
+						<atomic>true</atomic>
+						<stored>true</stored>
+						<tokenised>both</tokenised>
+						<facetable>true</facetable>
+					</index>
+				</property>
+				<property name="demo:footer">
+					<title>Footer</title>
+					<type>d:text</type>
+					<mandatory enforced="true">true</mandatory>
+					<index enabled="true">
+						<atomic>true</atomic>
+						<stored>true</stored>
+						<tokenised>both</tokenised>
+						<facetable>true</facetable>
+					</index>
+				</property>
+			</properties>
+			<mandatory-aspects>
+				<aspect>cm:taggable</aspect>
+			</mandatory-aspects>
+		</type>
+	</types>
+</model>

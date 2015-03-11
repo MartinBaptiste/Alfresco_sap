@@ -1,0 +1,63 @@
+<alfresco-config>
+	<config evaluator="node-type" condition="demo:personalContent" replace="true">
+		<forms>
+			<form>
+				<field-visibility>
+					<show id="cm:name" />
+					<show id="demo:subname" />
+					<show id="cm:content" />
+					<show id="demo:footer" />
+					<show id="cm:taggable" />
+					
+					<hide id="sys:locale" />
+					<hide id="cm:accessed" />
+					<hide id="cm:modified" />
+					<hide id="cm:created" />
+					<hide id="cm:creator" />
+					<hide id="cm:modifier" />
+				</field-visibility>
+				<appearance>
+					<set id="personalContent.setId" appearance="bordered-panel" label-id="personalContent.set.label" />
+					<field id="cm:name" set="personalContent.setId" />
+					<field id="demo:subname" set="personalContent.setId" label-id="personalContent.subname.label" />
+					<field id="cm:content" set="personalContent.setId">
+						<control template="/org/alfresco/components/form/controls/richtext.ftl" />
+					</field>
+					<field id="demo:footer" set="personalContent.setId" label-id="personalContent.footer.label" />
+					<field id="cm:taggable" set="personalContent.setId" />
+				</appearance>
+			</form>
+		</forms>
+	</config>
+
+	<config evaluator="model-type" condition="demo:personalContent" replace="true">
+		<forms>
+			<form>
+				<field-visibility>
+					<show id="cm:name" />
+					<show id="demo:subname" />
+					<show id="cm:content" />
+					<show id="demo:footer" />
+					<show id="cm:taggable" />
+					
+					<hide id="sys:locale" />
+					<hide id="cm:accessed" />
+					<hide id="cm:modified" />
+					<hide id="cm:created" />
+					<hide id="cm:creator" />
+					<hide id="cm:modifier" />
+				</field-visibility>
+				<appearance>
+					<set id="personalContent.setId" appearance="bordered-panel" label-id="personalContent.set.label" />
+					<field id="cm:name" set="personalContent.setId" />
+					<field id="demo:subname" set="personalContent.setId" label-id="personalContent.subname.label" />
+					<field id="cm:content" set="personalContent.setId">
+						<control template="/org/alfresco/components/form/controls/richtext.ftl" />
+					</field>
+					<field id="demo:footer" set="personalContent.setId" label-id="personalContent.footer.label" />
+					<field id="cm:taggable" set="personalContent.setId" />
+				</appearance>
+			</form>
+		</forms>
+	</config>
+</alfresco-config>

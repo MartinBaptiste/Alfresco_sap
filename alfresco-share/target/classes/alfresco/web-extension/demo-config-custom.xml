@@ -1,0 +1,15 @@
+<alfresco-config>
+	<config replace="true">
+		<flags>
+			<client-debug>true</client-debug>
+			<client-debug-autologging>false</client-debug-autologging>
+		</flags>
+	</config>
+
+	<config evaluator="string-compare" condition="DocumentLibrary">
+		<create-content>
+			<content label="create-content.personalContent" index="30"
+				icon="text" itemid="demo:personalContent" mimeType="text/plain" />
+		</create-content>
+	</config>
+</alfresco-config>
